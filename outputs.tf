@@ -4,7 +4,7 @@ output "success" {
 }
 
 output "message" {
-  description = "Success message including agent and release"
+  description = "Success message including agent"
   value       = local.success_message
 }
 

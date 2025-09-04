@@ -1,5 +1,5 @@
 locals {
-  success_message = "Agent '${var.agent}' processed release '${var.release}' successfully"
+  success_message = "Agent '${var.agent}' processed successfully"
 }
 
 

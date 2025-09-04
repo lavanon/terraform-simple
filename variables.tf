@@ -8,14 +8,4 @@ variable "agent" {
   }
 }
 
-variable "release" {
-  description = "Release version or id"
-  type        = string
-
-  validation {
-    condition     = length(trimspace(var.release)) > 0
-    error_message = "release must be a non-empty string."
-  }
-}
-
 
