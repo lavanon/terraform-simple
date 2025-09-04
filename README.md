@@ -6,7 +6,7 @@ Simple Terraform module that accepts an `agent` and reports success.
 
 ```hcl
 module "simple" {
-  source  = "./" # replace with your VCS source when publishing
+  source  = "./terraform-simple" # replace with your VCS source when publishing
 
   agent   = "my-agent"
 }
