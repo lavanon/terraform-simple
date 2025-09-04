@@ -18,4 +18,19 @@ output "bucket_arn" {
   value       = aws_s3_bucket.this.arn
 }
 
+output "bucket_domain_name" {
+  description = "S3 bucket global domain name"
+  value       = aws_s3_bucket.this.bucket_domain_name
+}
+
+output "bucket_regional_domain_name" {
+  description = "S3 bucket regional domain name"
+  value       = aws_s3_bucket.this.bucket_regional_domain_name
+}
+
+output "aws_region" {
+  description = "AWS region used for this deployment"
+  value       = var.aws_region
+}
+
 
