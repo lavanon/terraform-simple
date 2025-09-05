@@ -1,11 +1,9 @@
 variable "agent" {
   description = "Agent identifier or name"
   type        = string
+  default     = "docker-desktop-3"
 
-  validation {
-    condition     = length(trimspace(var.agent)) > 0
-    error_message = "agent must be a non-empty string."
-  }
+
 }
 
 variable "aws_region" {

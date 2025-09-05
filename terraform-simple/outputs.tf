@@ -9,7 +9,7 @@ output "message" {
 }
 
 output "bucket_id" {
-  description = "S3 bucket name"
+  description = "S3 bucket name (ID)"
   value       = aws_s3_bucket.this.id
 }
 
@@ -32,5 +32,3 @@ output "aws_region" {
   description = "AWS region used for this deployment"
   value       = var.aws_region
 }
-
-
